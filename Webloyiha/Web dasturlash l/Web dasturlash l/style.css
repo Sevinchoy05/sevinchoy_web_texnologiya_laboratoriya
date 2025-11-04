@@ -1,0 +1,109 @@
+/* Umumiy */
+body {
+  font-family: 'Times New Roman', Times, serif, sans-serif;
+  background-color: #fff8f0;
+  color: #232423;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header*/
+.sarlavha {
+  background-color: #ffb6b9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+.logotip {
+  font-size: 20px;
+  color: #fff;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Asosiy */
+.main {
+  padding: 30px;
+  text-align: center;
+}
+
+/* Div lar uchun*/
+.intro, .recipe-section, .list-section, .table-section {
+  background-color: #fff;
+  margin: 40px auto;
+  padding: 20spx;
+  width: 80%;
+  border-radius: 10px;
+  
+}
+
+.recipe-section img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 80px;
+}
+
+.main h2, .main h3 {
+  color: #ff6f61;
+}
+ul ol {
+list-style-position: inside;
+  padding-left: 30;
+  text-align: left;
+}
+.rasm{
+  width: auto;
+    height: 50px;
+    object-fit: cover;
+
+    border-radius:10px;
+        padding: 5px;
+        box-shadow: 2px 2px
+}
+/* Jadval dizayni */
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  
+
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+    
+
+}
+
+th {
+  background-color: #e2dcdc;
+  color: white;
+  
+
+}
+
+/* Footer qismi */
+.footer {
+  background-color: #ffb6b9;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+li{
+ text-align: left; 
+}
