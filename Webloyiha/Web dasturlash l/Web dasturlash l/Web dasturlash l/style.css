@@ -318,3 +318,54 @@ li{
   grid-template-columns: repeat(4, 1fr);
 
 }
+
+
+.main p, .card-text {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+}
+
+/* Sarlavha va kartalardagi matnlarni biroz kattalashtirish */
+.main h2, .main h3, .card-title {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+/* Kartalarga hover effekti */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Rasm hover effekti */
+.card-media img:hover {
+  filter: brightness(1.1);
+  transition: filter 0.3s ease;
+}
+
+/* Jadvalga engil hover effekti */
+table tr:hover {
+  background-color: #fff0f0;
+  transition: background-color 0.3s ease;
+}
+
+
+/* Input va textarea focus holatida yengil effekt */
+input:focus, textarea:focus, select:focus {
+  border-color: #ff6f61;
+  box-shadow: 0 0 5px rgba(255,111,97,0.3);
+}
+
+/* Grid kartalarni kichik ekranlarda moslashtirish */
+@media (max-width: 900px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
