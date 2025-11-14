@@ -315,8 +315,7 @@ li{
 
 .griddisley{
    display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
+   grid-template-columns: repeat(4, 1fr);
 }
 
 
@@ -358,14 +357,14 @@ input:focus, textarea:focus, select:focus {
   box-shadow: 0 0 5px rgba(255,111,97,0.3);
 }
 
-/* Grid kartalarni kichik ekranlarda moslashtirish */
-@media (max-width: 900px) {
-  .cards-grid {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 1200px) {
+  .griddisley {
+    grid-template-columns: 1fr !important;
   }
 }
-@media (max-width: 600px) {
-  .cards-grid {
-    grid-template-columns: 1fr;
-  }
-}
+
+
+
+
+
+
