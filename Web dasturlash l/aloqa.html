@@ -3,135 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pishiriqlar dunyosi</title>
+  <title>Aloqa - Pishiriqlar dunyosi</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="sarlavha">
-    <h1 class="logotip">Pishiriqlar dunyosi</h1>
-    <nav class="nav">
-       <a href="index.html">Bosh sahifa</a>
-      <a href="#">Retseptlar</a>
-      <a href="Biz.html">Biz haqimizda</a>
-      <a href="aloqa.html">Aloqa</a>
-    </nav>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Pishiriqlar dunyosi</h1>
+      <nav class="nav">
+        <a href="index.html">Bosh sahifa</a>
+        <a href="Retseptlar.html">Retseptlar</a>
+        <a href="Biz.html">Biz haqimizda</a>
+        <a href="yangiliklar.html">Yangiliklar</a>
+        <a href="aloqa.html">Aloqa</a>
+      </nav>
+    </div>
   </header>
-   <h1 style="color: chartreuse; background-color: antiquewhite;font-size: 20px;border: 2px solid chocolate;">
-    Manzil:
-    tel :nomer
-    e-mail:
-    location:
-    Admin: Sevinchoy
-  <main class="main">
-<div class="griddisley">
 
-  
-            <article class="card">
+  <!-- Aloqa ma'lumotlari -->
+  <section class="contact-info container">
+    <h2>Aloqa ma'lumotlari</h2>
+    <p><strong>Manzil:</strong> Toshkent, O'zbekiston</p>
+    <p><strong>Telefon:</strong> +998 90 123 45 67</p>
+    <p><strong>Email:</strong> info@pishiriqlardunyosi.uz</p>
+    <p><strong>Admin:</strong> Sevinchoy</p>
+  </section>
 
-        <div class="card-media">
-          <img src="asalli tort.jpg" alt="Tort" width="auto" height="auto"/>
+  <!-- Kontakt formasi -->
+  <section class="forma-section container">
+    <h2>Biz bilan bog'lanish</h2>
+    <form id="contactForm" method="post">
+      <fieldset>
+        <legend>Shaxsiy ma'lumotlar</legend>
+
+        <label for="fname">Ism va familiya:</label>
+        <input type="text" id="fname" name="fname" placeholder="Ismingizni kiriting" required>
+
+        <label for="email">Elektron pochta:</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+
+        <label for="tel">Telefon:</label>
+        <input type="tel" id="tel" name="tel" placeholder="+998901234567">
+
+        <label>Tug‘ilgan sana:</label>
+        <input type="date" name="birthdate">
+
+        <label>Jins:</label>
+        <div class="radio-group">
+          <input type="radio" name="gender" value="erkak"> Erkak
+          <input type="radio" name="gender" value="ayol"> Ayol
         </div>
 
-        <div class="card-meta">
-          <span class="meta-item">👤 Admin</span>
-          <span class="meta-sep">•</span>
-          <span class="meta-item">📅 30/10/2025</span>
-          <span class="meta-sep">•</span>
-          <span class="meta-item">👁️ 30</span>
+        <label>Qiziqishlar:</label>
+        <div class="checkbox-group">
+          <input type="checkbox" name="hobby" value="sport"> Sport
+          <input type="checkbox" name="hobby" value="musiqa"> Musiqa
+          <input type="checkbox" name="hobby" value="kitob"> Kitob o‘qish
         </div>
+      </fieldset>
 
-        <div class="card-body">
-          <h3 class="card-title">Shirin vanilyali tort</h3>
-          <p class="card-text">
-            Shirin, yumshoq va havo bilan to‘ldirilgan vanilyali tort. Retsept: un, tuxum,
-            shakar, sariyog‘, vanilin... (bu yerga to‘liq retseptni joylang).
-          </p>
-        </div>
+      <fieldset>
+        <legend>Qo‘shimcha ma’lumot</legend>
+        <label for="subjectSelect">Mavzu tanlang:</label>
+        <select name="subject" id="subjectSelect">
+          <option value="">— Tanlang —</option>
+          <option value="taklif">Taklif</option>
+          <option value="shikoyat">Shikoyat</option>
+          <option value="savol">Savol</option>
+        </select>
 
-        <div class="card-actions">
-          <button class="btn btn-outline">Tugma1</button>
-          <button class="btn btn-primary">Tugma2</button>
-        </div>
-      </article>
+        <label for="message">Xabar:</label>
+        <textarea id="message" name="message" rows="5" placeholder="Xabaringizni shu yerga yozing..." required></textarea>
 
-      <article class="card">
-        <div class="card-media">
-          <img src="shokolandli kek.jpg" alt="Pechenye" />
-        </div>
-        <div class="card-meta">
-          <span class="meta-item">👤 Admin</span>
-          <span class="meta-sep">•</span>
-          <span class="meta-item">📅 30/10/2025</span>
-          <span class="meta-sep">•</span>
-          <span class="meta-item">👁️ 30</span>
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">Shokoladli pechenye</h3>
-          <p class="card-text">
-            Qisqa vaqt ichida tayyorlanadigan yumshoq shokoladli pechenyelar. Retsept: un,
-            kakao, shakar, tuxum, yog‘...
-          </p>
-        </div>
-        <div class="card-actions">
-          <button class="btn btn-outline">Tugma1</button>
-          <button class="btn btn-primary">Tugma2</button>
-        </div>
-      </article>
+        <label><input type="checkbox" name="subscribe" id="subscribe"> Yangiliklarga obuna bo‘lish</label>
+      </fieldset>
 
-      <!-- CARD 3 -->
-      <article class="card">
-        <div class="card-media">
-          <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=1200&q=80&auto=format&fit=crop" alt="Cupcake" />
-        </div>
-        <div class="card-meta">
-          <span class="meta-item">👤 Admin</span>
-          <span class="meta-sep">•</span>
-          <span class="meta-item">📅 30/10/2025</span>
-          <span class="meta-sep">•</span>
-          <span class="meta-item">👁️ 30</span>
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">Kremli cupcake</h3>
-          <p class="card-text">
-            Rang-barang ustki qismi bilan mazali cupcake. Retsept: un, tuxum, shakar, krem...
-          </p>
-        </div>
-        <div class="card-actions">
-          <button class="btn btn-outline">Tugma1</button>
-          <button class="btn btn-primary">Tugma2</button>
-        </div>
-      </article>
+      <div class="btns">
+        <input type="submit" value="Yuborish" class="btn-primary">
+        <input type="reset" value="Tozalash" class="btn-outline">
+      </div>
+    </form>
+  </section>
+  <script src="script.js"></script>
 
-      
-      <article class="card">
-        <div class="card-media">
-          <img src="pishiriq.jpg" alt="Pirog" />
-        </div>
-        <div class="card-meta">
-          <span class="meta-item">👤 Admin</span>
-          <span class="meta-sep">•</span>
-          <span class="meta-item">📅 30/10/2025</span>
-          <span class="meta-sep">•</span>
-          <span class="meta-item">👁️ 30</span>
-        </div>
-        <div class="card-body">
-          <h3 class="card-title">Olmali pirog</h3>
-          <p class="card-text">
-            An'anaviy olmali pirog — issiq choy bilan juda mos. Retsept: olmalar, un,
-            sariyog‘, shakar...
-          </p>
-        </div>
-        <div class="card-actions">
-          <button class="btn btn-outline">Tugma1</button>
-          <button class="btn btn-primary">Tugma2</button>
-        
-        </article>
-  </div>
-</div>
-  <footer class="footer">
-    <p> 2025 Pishiriqlar dunyosi. Barcha huquqlar himoyalangan.</p>
+  <!-- Footer -->
+  <footer class="footer container">
+    <p>&copy; 2025 Pishiriqlar dunyosi. Barcha huquqlar himoyalangan.</p>
   </footer>
-
 </body>
 </html>

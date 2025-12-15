@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retseptlar - Pishiriqlar dunyosi</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Pishiriqlar dunyosi</h1>
+      <nav class="nav">
+        <a href="index.html">Bosh sahifa</a>
+        <a href="Retseptlar.html">Retseptlar</a>
+        <a href="Biz.html">Biz haqimizda</a>
+        <a href="yangiliklar.html">Yangiliklar</a>
+        <a href="aloqa.html">Aloqa</a>
+      </nav>
+    </div>
+  </header>
+
+
+<!-- Qidiruv -->
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="Retseptlarni qidir..." onkeyup="searchRecipes()">
+</div>
+
+
+ 
+<!-- index.html yoki retseptlar sahifasi -->
+<section class="news-section container">
+  <h2>So‘nggi yangiliklar</h2>
+  <div id="newsList">
+    <!-- Dastlabki yangiliklar shu yerda bo‘ladi -->
+  </div>
+  <button id="addNewsBtn" class="btn">Yangi yangilik qo‘shish</button>
+</section>
+
+
+  <!-- Bugungi retsept -->
+  <section class="recipe-section container">
+    <h2>Bugungi retsept: Asalli tort</h2>
+    <div class="recipe-images">
+      <img src="images/asalli tort.jpg" width="100" height="100" alt="Asalli tort">
+      <img src="images/shokolandli kek.jpg" width="100" height="100" alt="Shokoladli tort">
+    </div>
+    <p><i>Asalli tort</i> — eng mashhur va yumshoq pishiriqlardan biri.</p>
+  </section>
+
+  <!-- Masalliqlar va tayyorlanish bosqichlari -->
+  <section class="ingredients-steps container">
+    <div class="ingredients">
+      <h3>Masalliqlar:</h3>
+      <ul>
+        <li>Un</li>
+        <li>Asal</li>
+        <li>Shakar</li>
+        <li>Tuxum</li>
+        <li>Yog‘</li>
+      </ul>
+    </div>
+    <div class="steps">
+      <h3>Tayyorlanish bosqichlari:</h3>
+      <ol>
+        <li>Masalliqlarni aralashtiramiz.</li>
+        <li>Xamirni yoyamiz.</li>
+        <li>Listga solib pishiramiz.</li>
+        <li>Krem tayyorlaymiz.</li>
+        <li>Tortni bezaymiz.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Tayyorlanish va porsiya jadvali -->
+  <section class="recipe-table container">
+    <h3>Tayyorlanish vaqti va porsiya soni:</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Rasm</th>
+          <th>Taom nomi</th>
+          <th>Vaqti</th>
+          <th>Porsiya</th>
+          <th>Tugma</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td><img src="images/asalli tort.jpg" width="100" height="100" alt="Asalli tort"></td>
+          <td>Asalli tort</td>
+          <td>1 soat</td>
+          <td>8 ta</td>
+          <td>
+            <a href="https://tavsiyalar.uz/asalli-tort-medoviy-tort-tayyorlash/">Havolaga o'tish</a><br>
+            <a href="images/asalli tort.jpg" target="_blank">Rasmni ochish</a><br>
+            <a href="asalli.html" target="_blank">Asalli tort sahifasi</a>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><img src="images/shokolandli kek.jpg" width="100" height="100" alt="Shokoladli kek"></td>
+          <td>Shokoladli kek</td>
+          <td>45 daqiqa</td>
+          <td>6 ta</td>
+          <td>
+            <a href="https://www.bing.com/copilotsearch?q=shokalandli+keks">Havolaga o'tish</a><br>
+            <a href="images/shokolandli kek.jpg" target="_blank">Rasmni ochish</a>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><img src="images/bento.jpg" alt="Bento tort"></td>
+          <td>Bento tort</td>
+          <td>30 daqiqa</td>
+          <td>10 ta</td>
+          <td>
+            <a href="https://1000.menu/cooking/65641-bento-tort-koreiskii">Havolaga o'tish</a><br>
+            <a href="images/bento.jpg" target="_blank">Rasmni ochish</a>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><img src="images/churros.jpg" alt="Churros"></td>
+          <td>Churros</td>
+          <td>35 daqiqa</td>
+          <td>8 ta</td>
+          <td>
+            <a href="https://dzen.ru/a/XJnqFBoeoAC03jGo">Havolaga o'tish</a><br>
+            <a href="images/churros.jpg" target="_blank">Rasmni ochish</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Batafsil retseptlar -->
+  <section class="full-recipes container">
+    <h1>Shirinliklar Retseptlari</h1>
+
+    <div id="shokoladli-tort" class="recipe-detail">
+      <div class="retsept-box">
+
+  <img src="images/shokolandli kek.jpg" alt="Shokoladli Tort">
+  <h2>Shokoladli Tort</h2>
+      <h3>Kerakli masalliqlar:</h3>
+      <ul>
+        <li>3 ta tuxum</li>
+        <li>200 g shakar</li>
+        <li>250 g un</li>
+        <li>2 qoshiq kakao</li>
+        <li>50 ml sut</li>
+        <li>50 g sariyog‘</li>
+      </ul>
+      <h3>Tayyorlash:</h3>
+      <p>Tuxum va shakarni ko‘pirtiring. Un, kakao, sut va eritilgan sariyog‘ qo‘shing. 180°C da 35 daqiqa pishiring. Sovutib, krem bilan bezang.</p><br>
+      
+      <button class="js-recipe-btn">Ko‘rish</button>
+<button class="favorite-btn">♡</button>
+
+</div>
+
+
+    </div>
+  </div>
+    </div>
+</div>
+
+
+    <!-- Qo‘shimcha retseptlar: Vanilla, Pishloqli, Mevali, va h.k. -->
+    <div id="vanilla-keks" class="recipe-detail">
+      <h2>Vanilla Keks</h2>
+      <ul>
+        <li>3 ta tuxum</li>
+        <li>150 g shakar</li>
+        <li>200 g un</li>
+        <li>50 ml sut</li>
+        <li>50 g sariyog‘</li>
+        <li>1 choy qoshiq vanilin</li>
+      </ul>
+      <p>Tuxum va shakarni ko‘pirtiring. Qolgan masalliqlarni qo‘shing va 180°C da 30 daqiqa pishiring.</p>
+      <button class="js-recipe-btn">Ko‘rish</button>
+<button class="favorite-btn">♡</button>
+
+    </div>
+
+    <!-- Shu tarzda boshqa retseptlar ham bo‘lishi mumkin -->
+
+
+<!-- MODAL: bitta sahifada bir marta bo'lsa kifoya -->
+<div id="modal" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button id="modalClose" class="modal-close" aria-label="close">&times;</button>
+    <h2 id="modalTitle"></h2>
+    <img id="modalImg" src="" alt="" style="max-width:100%;border-radius:8px;margin:10px 0;">
+    <p id="modalText"></p>
+    <a id="modalContact" href="aloqa.html" class="btn">Buyurtma berish</a>
+  </div>
+</div>
+
+    
+  </section>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,370 +1,447 @@
-/* Umumiy */
-body {
-  font-family: 'Times New Roman', Times, serif, sans-serif;
-  background-color: #fff8f0;
-  color: #232423;
+/* =======================
+   General Reset & Body
+======================= */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Header*/
-.sarlavha {
-  background-color: #ffb6b9;
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fdf6f0;
+  scroll-behavior: smooth;
+}
+
+/* =======================
+   Header / Navigation
+======================= */
+header.header, header.sarlavha {
+  background: linear-gradient(90deg, #ff6b6b, #ff8787);
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 50px;
 }
 
-.logotip {
-  font-size: 20px;
-  color: #fff;
+header .logo, .logotip {
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 
-.nav a {
+header .nav a {
   color: #fff;
   text-decoration: none;
-  margin-left: 20px;
-  font-weight: bold;
-}
-
-.nav a:hover {
-  text-decoration: underline;
-}
-
-/* Asosiy */
-.main {
-  padding: 30px;
-  text-align: center;
-}
-
-/* Div lar uchun*/
-.intro, .recipe-section, .list-section, .table-section {
-  background-color: #fff;
-  margin: 40px auto;
-  padding: 20spx;
-  width: 80%;
-  border-radius: 10px;
-  
-}
-
-.recipe-section img {
-  display: block;
-  margin: 10px auto;
-  border-radius: 80px;
-}
-
-.main h2, .main h3 {
-  color: #ff6f61;
-}
-ul ol {
-list-style-position: inside;
-  padding-left: 30;
-  text-align: left;
-}
-.rasm{
-  width: auto;
-    height: 50px;
-    object-fit: cover;
-
-    border-radius:10px;
-        padding: 5px;
-        box-shadow: 2px 2px
-}
-/* Jadval dizayni */
-table {
-  margin: 20px auto;
-  border-collapse: collapse;
-  background-color: #fff;
-  
-
-}
-
-th, td {
-  border: 1px solid #ddd;
-  padding: 10px 20px;
-    
-
-}
-
-th {
-  background-color: #e2dcdc;
-  color: white;
-  
-
-}
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f7fb;
-  padding: 40px;
-  color: #333;
-}
-
-.forma-section {
-  max-width: 700px;
-  background: white;
-  padding: 25px 40px;
-  margin: 0 auto;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h2 {
-  text-align: center;
-  color: #0077cc;
-  margin-bottom: 20px;
-}
-
-fieldset {
-  border: 2px solid #d0d7e1;
-  border-radius: 8px;
-  padding: 15px 20px;
-  margin-bottom: 20px;
-}
-
-legend {
-  font-weight: bold;
-  color: #0077cc;
-}
-
-label {
+  margin-left: 1.5rem;
   font-weight: 500;
+  transition: all 0.3s;
 }
 
-input[type=text],
-input[type=password],
-input[type=email],
-input[type=tel],
-input[type=date],
-input[type=number],
-input[type=color],
-input[type=month],
-input[type=week],
-input[type=time],
-input[type=datetime-local],
-input[type=url],
-input[type=file],
-input[type=search],
-input[type=range],
-select,
-textarea {
-  width: 100%;
-  padding: 8px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 15px;
-  transition: all 0.3s ease;
+header .nav a:hover {
+  color: #ffe066;
+  transform: translateY(-2px);
 }
 
-input:focus,
-textarea:focus,
-select:focus {
-  border-color: #0077cc;
-  outline: none;
-  box-shadow: 0 0 5px rgba(0,119,204,0.3);
-}
-
-input[type=checkbox],
-input[type=radio] {
-  width: auto;
-  margin-right: 5px;
-}
-
-.btns {
+/* =======================
+   Intro Section / Banner
+======================= */
+.intro {
+  background: linear-gradient(135deg, #ffe066, #ff6b6b);
+  color: #333;
   text-align: center;
+  padding: 3rem 1rem;
 }
 
-input[type=button],
-input[type=submit],
-input[type=reset] {
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  padding: 10px 25px;
-  font-size: 16px;
-  border-radius: 6px;
-  margin: 5px;
-  cursor: pointer;
-  transition: 0.3s;
+.intro h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease forwards;
 }
 
-input[type=reset] {
-  background-color: #777;
+.intro p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
-input[type=button]:hover,
-input[type=submit]:hover {
-  background-color: #005fa3;
-}
-
-input[type=reset]:hover {
-  background-color: #555;
-}
-
-
-
-.cards-grid{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 26px;
-  align-items: start;
-  justify-items: center;
-  padding-bottom: 40px;
-}
-
-/* INDIVIDUAL CARD: ichida grid (4 qator) */
-.card{
-  background: #fff;
-  width: 100%;
-  max-width: 280px;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(3,10,12,0.35);
-  overflow: hidden;
-  display: grid;
-  grid-template-rows: 160px auto 1fr auto; /* 1) rasm 2) meta 3) body 4) actions */
-  transition: transform .18s ease, box-shadow .18s ease;
-}
-
-
-/* 1) RASM qismi */
-.card-media img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* 2) METADATA */
-.card-meta{
-  display: flex;
-  gap: 8px;
-  align-items: center;
-  padding: 12px 16px;
-  font-size: 13px;
-  color: #666;
-  border-bottom: 1px solid #eee;
-}
-.meta-sep { color: #ccc; margin: 0 6px; }
-
-/* 3) BODY (tavsif/retsept) */
-.card-body{
-  padding: 16px;
-}
-.card-title{
-  font-size: 16px;
-  margin-bottom: 8px;
-  color: #222;
-}
-.card-text{
-  font-size: 14px;
-  line-height: 1.45;
-  color: #444;
-}
-
-/* 4) ACTIONS: Flexbox yordamida tugmalar joylashadi */
-.card-actions{
-  display: flex;
-  gap: 12px;
-  padding: 14px 16px;
-  align-items: center;
-  justify-content: space-between; /* birini chapga, birini o'ngga joylash uchun */
-  border-top: 1px solid #f0f0f0;
-  background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.02));
-}
-
-/* Tugma umumiy */
-.btn{
-  padding: 8px 14px;
-  font-size: 14px;
-  border-radius: 18px;
-  cursor: pointer;
-  border: 2px solid transparent;
-  background: transparent;
-}
-
-/* Outline tugma */
-.btn-outline{
-  border-color: #cfa6ff;
-  color: #6b3bd6;
-}
-
-/* Primary (purple) tugma */
-.btn-primary{
-  background: linear-gradient(90deg,#7b3fe1,#b34ff1);
-  color: #fff;
-  border: none;
-  box-shadow: 0 4px 12px rgba(123,63,225,0.26);
-}
-
-
-/* Footer qismi */
-.footer {
-  background-color: #ffb6b9;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-li{
- text-align: left; 
-}
-
-
-
-.griddisley{
-   display: grid;
-   grid-template-columns: repeat(4, 1fr);
-}
-
-
-.main p, .card-text {
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
-  letter-spacing: 0.5px;
-  line-height: 1.6;
-}
-
-/* Sarlavha va kartalardagi matnlarni biroz kattalashtirish */
-.main h2, .main h3, .card-title {
-  text-transform: capitalize;
+.intro mark {
+  background: #fff3b0;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
   font-weight: 600;
 }
 
-/* Kartalarga hover effekti */
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #ff6b6b;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
-/* Rasm hover effekti */
-.card-media img:hover {
-  filter: brightness(1.1);
-  transition: filter 0.3s ease;
+.btn:hover {
+  background: #ff8787;
+  transform: translateY(-2px);
 }
 
-/* Jadvalga engil hover effekti */
-table tr:hover {
-  background-color: #fff0f0;
-  transition: background-color 0.3s ease;
+.btn-outline {
+  background: transparent;
+  border: 2px solid #ff6b6b;
+  color: #ff6b6b;
 }
 
-
-/* Input va textarea focus holatida yengil effekt */
-input:focus, textarea:focus, select:focus {
-  border-color: #ff6f61;
-  box-shadow: 0 0 5px rgba(255,111,97,0.3);
+.btn-outline:hover {
+  background: #ff6b6b;
+  color: #fff;
 }
 
-@media (max-width: 1200px) {
-  .griddisley {
-    grid-template-columns: 1fr !important;
+.btn-primary {
+  background: #ff8787;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #ff6b6b;
+}
+
+/* =======================
+   Retseptlar Grid / Cards
+======================= */
+.retseptlar-grid, .griddisley {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.retsept-box, .card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.retsept-box:hover, .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.retsept-box img, .card-media img {
+  width: 100%;
+  display: block;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.retsept-box img:hover, .card-media img:hover {
+  transform: scale(1.05);
+}
+
+.retsept-box h2, .card-title {
+  padding: 0.8rem 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-body {
+  padding: 0 1rem 1rem;
+}
+
+.card-meta {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.card-actions {
+  padding: 0.8rem 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* =======================
+   Recipe Table
+======================= */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+table th {
+  background: #ff6b6b;
+  color: #fff;
+  font-weight: 600;
+}
+
+table tbody tr:nth-child(even) {
+  background: #fdf6f0;
+}
+
+/* =======================
+   Recipe Detail
+======================= */
+.recipe-detail {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin: 2rem 0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.recipe-detail img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.recipe-detail ul, .recipe-detail ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* =======================
+   Form / Contact
+======================= */
+.forma-section {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  margin: 2rem auto;
+  max-width: 600px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.forma-section h2 {
+  margin-bottom: 1rem;
+  color: #ff6b6b;
+  font-weight: 700;
+}
+
+.forma-section label {
+  display: block;
+  margin-top: 0.8rem;
+  font-weight: 500;
+}
+
+.forma-section input,
+.forma-section textarea,
+.forma-section select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.forma-section input:focus,
+.forma-section textarea:focus,
+.forma-section select:focus {
+  outline: none;
+  border-color: #ff6b6b;
+  box-shadow: 0 0 5px rgba(255,107,107,0.5);
+}
+
+.radio-group, .checkbox-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.3rem;
+}
+
+.btns {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/* =======================
+   Modal
+======================= */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.5s ease;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+  animation: scaleIn 0.5s ease;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px; right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* =======================
+   Footer
+======================= */
+.footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  background: #ff6b6b;
+  color: #fff;
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+/* =======================
+   Animations
+======================= */
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* =======================
+   Media Queries (Responsive)
+======================= */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .nav {
+    margin-top: 0.5rem;
+  }
+
+  .retseptlar-grid, .griddisley {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-meta {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .retseptlar-grid, .griddisley {
+    grid-template-columns: 1fr;
+  }
+
+  .intro h2 {
+    font-size: 2rem;
+  }
+
+  .btns {
+    flex-direction: column;
   }
 }
 
 
 
+/* 10*/
+.btn, .btn-primary, .btn-outline {
+  transition: all 0.3s ease; /* silliq o‘tish effekti */
+}
+
+.btn:hover {
+  transform: scale(1.05); /* biroz kattalashadi */
+  background-color: #ff6b6b; /* fon rangi o‘zgaradi */
+  color: white;
+}
+.card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+}
+.modal {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s forwards; /* fade-in animatsiya */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.retsept-box img, .card-media img {
+  transition: transform 0.5s ease;
+}
+
+.retsept-box img:hover, .card-media img:hover {
+  transform: scale(1.1); /* biroz kattalashadi */
+}
 
 
+#loadMoreBtn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
+#loadMoreBtn:hover {
+  background-color: #ffb347;
+  transform: translateY(-3px);
+}
+
+/*11*/
